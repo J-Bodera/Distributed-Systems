@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h2 th:text="${currency}" />
+<h3 th:text="'Aktualny kurs'"/>
+<label th:text="${current}"/><br>
+
+<h3 th:text="'Wyniki dla ' + ${topCount} + ' ostatnich notowań kursów'"/>
+<ul>
+    <li th:text="'AVG ' + ${avg}" />
+    <li th:text="'MIN ' + ${min}" />
+    <li th:text="'MAX ' + ${max}" />
+    <li th:text="'MEDIAN ' + ${med}" />
+</ul><br>
+<h3 th:text="'Wyniki dla  notowań kursów między ' + ${start} + ' a ' + ${end}"/>
+<ul>
+    <li th:text="'AVG ' + ${avgD}" />
+    <li th:text="'MIN ' + ${minD}" />
+    <li th:text="'MAX ' + ${maxD}" />
+    <li th:text="'MEDIAN ' + ${medD}" />
+</ul>
+<a href="/">powrót</a>
+</body>
+</html>

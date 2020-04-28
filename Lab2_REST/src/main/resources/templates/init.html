@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Kursy walut</h2>
+
+    <form action="/input" method="get">
+        <label>Waluta:</label><br>
+        <select id="currency" name="currency">
+            <option value="USD">[USD] Dolar amerykański</option>
+            <option value="EUR">[EUR] Euro</option>
+            <option value="CHF">[CHF] Frank szwajcarski</option>
+            <option value="GBP">[GBP] Funt szterling</option>
+            <option value="THB">[THB] Bat tajlandzki</option>
+            <option value="AUD">[AUD] Dolar australijski</option>
+            <option value="HKD">[HKD] Dolar hongkoński</option>
+            <option value="CAD">[CAD] Dolar kanadyjski</option>
+            <option value="HUF">[HUF] Forint węgierski</option>
+            <option value="UAH">[UAH] Hrywna ukraińska</option>
+            <option value="JPY">[JPY] Jen japoński</option>
+            <option value="CNY">[CNY] Juan chiński</option>
+            <option value="CZK">[CZK] Korona czeska</option>
+            <option value="DKK">[DKK] Korona duńska</option>
+            <option value="NOK">[NOK] Korona norweska</option>
+            <option value="SEK">[SEK] Korona szwedzka</option>
+            <option value="HRK">[HRK] Kuna chorwacka</option>
+            <option value="RON">[RON] Lej rumuński</option>
+            <option value="BGN">[BGN] Lew bułgarski</option>
+            <option value="TRY">[TRY] Lira turecka</option>
+            <option value="BRL">[BRL] Real brazylisjki</option>
+            <option value="RUB">[RUB] Rubel rosyjski</option>
+            <option value="INR">[INR] Rupia indyjska</option>
+        </select><br><br>
+        <label>Ile ostatnich notowań:</label><br>
+        <input type="number" id="topCount" name="topCount"><br><br>
+        <label>Zakres dat</label><br>
+        <input type="date" id="start" name="start">
+        <label> - </label>
+        <input type="date" id="end" name="end"><br><br>
+        <input type="submit" value="Sprawdź">
+    </form>
+</body>
+</html>
